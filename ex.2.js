@@ -5,6 +5,7 @@ function lastNegativeIndex(nums) {
   for (let i = nums.length; i >= 0; i--) {
     if (nums[i] < 0) {
       idx = i;
+      break;
     }
   }
   return idx;
